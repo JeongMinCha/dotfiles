@@ -3,7 +3,7 @@ alias gst="git status"
 alias glg="git log --oneline -10"
 alias grf="git reflog -10"
 alias gcm="git commit"
-alias gdf="git diff"
+alias gdff="git diff"
 
 # ls aliases
 alias ls="ls -v"
