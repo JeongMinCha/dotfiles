@@ -14,9 +14,6 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 export SDK=/Users/JeongMinCha/eclipse/sdk
 
-alias ls="ls -v"
-alias ll="ls -lv"
-
 source .aliases
 
 # pyenv
