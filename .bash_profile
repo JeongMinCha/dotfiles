@@ -1,4 +1,4 @@
-source .path
+source ~/.path
 
 export PS1='\[\033[36m\]\h\[\033[33m\] [\w]\[\033[m\]'
 export CLICOLOR=1
@@ -14,7 +14,7 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 export SDK=/Users/JeongMinCha/eclipse/sdk
 
-source .aliases
+source ~/.aliases
 
 # pyenv
 # export PYENV_ROOT="$HOME/.pyenv"
