@@ -11,16 +11,16 @@ PATH=path
 VIMRC=vimrc
 
 delete:
-	@$(RM) ~/.$(BASH_PROFILE)
 	@$(RM) ~/.$(ALIASES)
 	@$(RM) ~/.$(PATH)
+	@$(RM) ~/.$(BASH_PROFILE)
 	@$(RM) ~/.$(VIMRC)
 	@echo "existing links have been deleted."
 
 link:
-	@$(LN) -s $$(pwd)/.$(BASH_PROFILE) ~/.$(BASH_PROFILE)
 	@$(LN) -s $$(pwd)/.$(ALIASES) ~/.$(ALIASES)
 	@$(LN) -s $$(pwd)/.$(PATH) ~/.$(PATH)
+	@$(LN) -s $$(pwd)/.$(BASH_PROFILE) ~/.$(BASH_PROFILE)
 	@$(LN) -s $$(pwd)/.$(VIMRC) ~/.$(VIMRC)
 	@echo "links to these dotfiles have been made."
 
