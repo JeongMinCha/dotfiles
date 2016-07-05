@@ -1,21 +1,31 @@
+###############################################################################
+#                                                                             #
+#                             PATH setting                                    #
+#                                                                             #
+###############################################################################
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH=${PATH}:/opt/i386dev/bin
 export PATH="$PATH:/Users/JeongMinCha/pintos/utils"
 export PATH=$PATH:/usr/local/MATLAB/R2015a/bin/
 
 # added by Anaconda3 4.0.0 installer
-export PATH="/Users/JeongMinCha/anaconda/bin:$PATH"
+export PATH="/Users/$(whoami)/anaconda/bin:$PATH"
 
 # added by Anaconda3 2.4.1 installer
-export PATH="/Users/JeongMinCha/anaconda/bin:$PATH"
+export PATH="/Users/$(whoami)/anaconda/bin:$PATH"
 
 # added by Anaconda3 2.4.1 installer
-export PATH="/Users/JeongMinCha/Dropbox/Development/anaconda/bin:$PATH"
+export PATH="/Users/$(whoami)/Dropbox/Development/anaconda/bin:$PATH"
 
 # For using Android SDK Platform tools
 export PATH=${PATH}:/Users/$(whoami)/Library/Android/sdk/platform-tools
 export PATH=${PATH}:/Users/$(whoami)/Library/Android/sdk/tools
 
+###############################################################################
+#                                                                             #
+#                              PS1 setting                                    #
+#                                                                             #
+###############################################################################
 export PS1='\[\033[36m\]\h\[\033[33m\] [\w]\[\033[m\]'
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
@@ -35,6 +45,11 @@ export ANT_HOME=/Users/JeongMinCha/apache-ant-1.9.7
 
 export PATH=${PATH}:${ANT_HOME}/bin
 
+###############################################################################
+#                                                                             #
+#                              aliases setting                                #
+#                                                                             #
+###############################################################################
 # Git aliases
 alias gst="git status"
 alias glg="git log --oneline -10"
