@@ -5,7 +5,6 @@
 ###############################################################################
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH=${PATH}:/opt/i386dev/bin
-export PATH="$PATH:/Users/JeongMinCha/pintos/utils"
 export PATH=$PATH:/usr/local/MATLAB/R2015a/bin/
 
 # added by Anaconda3 4.0.0 installer
@@ -21,6 +20,10 @@ export PATH="/Users/$(whoami)/Dropbox/Development/anaconda/bin:$PATH"
 export PATH=${PATH}:/Users/$(whoami)/Library/Android/sdk/platform-tools
 export PATH=${PATH}:/Users/$(whoami)/Library/Android/sdk/tools
 
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home 
+export ANT_HOME=/Users/JeongMinCha/apache-ant-1.9.7
+export PATH=${PATH}:${ANT_HOME}/bin
+
 ###############################################################################
 #                                                                             #
 #                              PS1 setting                                    #
@@ -29,21 +32,9 @@ export PATH=${PATH}:/Users/$(whoami)/Library/Android/sdk/tools
 export PS1='\[\033[36m\]\h\[\033[33m\] [\w]\[\033[m\]'
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-export TERM=xterm-color
 export GNUTERM="qt"
-export GTEST_DIR=/Users/jeongmin/Development/gtest-1.7.0/
-
-export TERM='xterm-color'
-export CLICOLOR=2
-export LSCOLORS=ExFxCxDxBxegedabagacad
-export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 export SDK=/Users/JeongMinCha/eclipse/sdk
-
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home 
-export ANT_HOME=/Users/JeongMinCha/apache-ant-1.9.7
-
-export PATH=${PATH}:${ANT_HOME}/bin
 
 ###############################################################################
 #                                                                             #
