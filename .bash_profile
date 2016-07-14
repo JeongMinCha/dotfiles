@@ -51,6 +51,8 @@ alias glg="git log --oneline -10"
 alias grf="git reflog -10"
 alias gcm="git commit"
 alias gdff="git diff"
+alias gps="git push origin $(parse_git_branch)"
+alias gpsf="git push -f origin $(parse_git_branch)"
 
 # ls aliases
 alias ls="ls -v"
