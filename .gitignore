@@ -1,0 +1,8 @@
+# Ignore everything
+*
+# White list
+!.bash_profile
+!.vimrc
+!.Makefile
+!README.md
+
