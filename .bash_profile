@@ -81,3 +81,12 @@ if [ -f /usr/local/octave/3.8.0/bin/octave-3.8.0 ]; then
     sudo ln -sf /usr/local/octave/3.8.0/bin/octave-3.8.0 /usr/local/bin/octave
   fi
 fi
+
+##
+# Your previous /Users/JeongMinCha/.bash_profile file was backed up as /Users/JeongMinCha/.bash_profile.macports-saved_2016-07-07_at_17:44:21
+##
+
+# MacPorts Installer addition on 2016-07-07_at_17:44:21: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
