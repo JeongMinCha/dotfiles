@@ -53,6 +53,7 @@ alias gcm="git commit"
 alias gdff="git diff"
 alias gps="git push origin $(parse_git_branch)"
 alias gpsf="git push -f origin $(parse_git_branch)"
+alias gca="git commit --amend"
 
 # ls aliases
 alias ls="ls -v"
