@@ -60,7 +60,8 @@ export PATH=${PATH}:${ANT_HOME}/bin
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
-export PS1="> $C_BLUE\h $C_RED[\t] $C_GREEN[\w] $C_DEFAULT"
+#export PS1="> $C_BLUE\h $C_RED[\t] $C_GREEN[\w] $C_DEFAULT"
+export PS1="> $C_BLUE\u $C_RED[\t] $C_GREEN[\w] $C_DEFAULT"
 export PS1=$PS1"$C_LIGHTYELLOW$(parse_git_branch) $C_DEFAULT\n\$ "
 export CLICOLOR=1
 export LSCOLORS=CxFxBxDxCxegedabagacad
