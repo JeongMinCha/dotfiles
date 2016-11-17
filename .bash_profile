@@ -49,7 +49,7 @@ export PATH=${PATH}:/Users/$(whoami)/Library/Android/sdk/tools
 
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home 
 export JAVA_HOME=$(/usr/libexec/java_home)
-export ANT_HOME=/Users/JeongMinCha/apache-ant-1.9.7
+export ANT_HOME=/Users/$(whoami)/apache-ant-1.9.7
 export PATH=${PATH}:${ANT_HOME}/bin
 
 ###############################################################################
@@ -67,7 +67,7 @@ export CLICOLOR=1
 export LSCOLORS=CxFxBxDxCxegedabagacad
 export GNUTERM="qt"
 
-export SDK=/Users/JeongMinCha/eclipse/sdk
+export SDK=/Users/$(whoami)/eclipse/sdk
 
 ###############################################################################
 #                                                                             #
@@ -116,7 +116,7 @@ if [ -f /usr/local/octave/3.8.0/bin/octave-3.8.0 ]; then
 fi
 
 ##
-# Your previous /Users/JeongMinCha/.bash_profile file was backed up as /Users/JeongMinCha/.bash_profile.macports-saved_2016-07-07_at_17:44:21
+# Your previous /Users/$(whoami)/.bash_profile file was backed up as /Users/JeongMinCha/.bash_profile.macports-saved_2016-07-07_at_17:44:21
 ##
 
 # MacPorts Installer addition on 2016-07-07_at_17:44:21: adding an appropriate PATH variable for use with MacPorts.
@@ -125,6 +125,6 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 
 # added by Anaconda2 4.1.1 installer
-export PATH="/Users/JeongMinCha/anaconda/bin:$PATH"
+export PATH="/Users/$(whoami)/anaconda/bin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
