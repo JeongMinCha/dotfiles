@@ -20,7 +20,8 @@ export PATH="/Users/$(whoami)/Dropbox/Development/anaconda/bin:$PATH"
 export PATH=${PATH}:/Users/$(whoami)/Library/Android/sdk/platform-tools
 export PATH=${PATH}:/Users/$(whoami)/Library/Android/sdk/tools
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home 
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home 
+export JAVA_HOME=$(/usr/libexec/java_home)
 export ANT_HOME=/Users/JeongMinCha/apache-ant-1.9.7
 export PATH=${PATH}:${ANT_HOME}/bin
 
@@ -35,7 +36,7 @@ parse_git_branch() {
 export PS1='\[\033[36m\]\h\[\033[33m\] [\w]\[\033[m\]'
 export PS1=$PS1'\[\033[01;33m\]$(parse_git_branch)\[\033[00m\]\n\$ '
 export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
+export LSCOLORS=CxFxBxDxCxegedabagacad
 export GNUTERM="qt"
 
 export SDK=/Users/JeongMinCha/eclipse/sdk
@@ -54,6 +55,7 @@ alias gdff="git diff"
 alias gps="git push origin $(parse_git_branch)"
 alias gpsf="git push -f origin $(parse_git_branch)"
 alias gca="git commit --amend"
+alias gchm="git checkout master"
 
 # ls aliases
 alias ls="ls -v"
@@ -93,3 +95,8 @@ fi
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+
+# added by Anaconda2 4.1.1 installer
+export PATH="/Users/JeongMinCha/anaconda/bin:$PATH"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
