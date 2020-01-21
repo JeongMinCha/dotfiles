@@ -124,6 +124,14 @@ alias 238='ssh 238'
 alias 239='ssh 239'
 alias ll='ls -la'
 
+alias dpa='docker ps -a'
+alias dpaq='docker ps -a -q'
+alias dia='docker images -a'
+alias diaq='docker images -a -q'
+alias dsaq='docker stop $(docker ps -a -q)'
+alias draq='docker rm $(docker ps -a -q)'
+alias driaq='docker rmi $(docker images -a -q)'
+
 # Connect WSL docker to Windows Host Docker Engine
 export DOCKER_HOST=localhost:2375
 
