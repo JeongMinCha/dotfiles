@@ -12,7 +12,7 @@ delete:
 		if test -e ~/$$target; \
 			then \
 			echo "Deleted ~/$$target."; \
-			rm $$target ; \
+			rm ~/$$target ; \
 		fi \
 	done
 	@echo "The existing dotfiles and links have been deleted."
