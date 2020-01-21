@@ -3,6 +3,10 @@
 # Commands
 TARGET_FILES=.bash_profile .vimrc .zshrc
 
+first:
+	git config --global credential.helper store
+	
+
 delete:
 	@for target in $(TARGET_FILES); do \
 		if test -e ~/$$target; \
@@ -24,5 +28,5 @@ link:
 	@echo "The links to these dotfiles have been made."
 
 install: delete link
-	#echo "All links of dotfiles have been updated!"
+	echo "All links of dotfiles have been updated!"
 
