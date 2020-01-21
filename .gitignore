@@ -3,6 +3,7 @@
 # White list
 !.bash_profile
 !.vimrc
+!.zshrc
 !.Makefile
 !README.md
 !.ssh/config
