@@ -25,6 +25,7 @@ link:
 			ln -sf $$(pwd)/$$target ~/$$target ; \
 		fi \
 	done
+	$(shell zsh -c "source ~/.zshrc")
 	@echo "The links to these dotfiles have been made."
 
 install: delete link
