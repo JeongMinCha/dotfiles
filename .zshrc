@@ -132,6 +132,13 @@ alias dsaq='docker stop $(docker ps -a -q)'
 alias draq='docker rm $(docker ps -a -q)'
 alias driaq='docker rmi $(docker images -a -q)'
 
+alias gst='git status'
+alias glg='git log -10'
+alias gps='git push -u origin HEAD'
+alias gcm='git commit'
+alias gca='git commit --amend'
+alias gaa='git add .'
+
 # Connect WSL docker to Windows Host Docker Engine
 export DOCKER_HOST=localhost:2375
 
