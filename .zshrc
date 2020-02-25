@@ -111,7 +111,7 @@ if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
     if [ -f "/home/jeongmincha/anaconda3/etc/profile.d/conda.sh" ]; then
-       . "/home/jeongmincha/anaconda3/etc/profile.d/conda.sh"
+# . "/home/jeongmincha/anaconda3/etc/profile.d/conda.sh"  # commented out by conda initialize
     else
         export PATH="/home/jeongmincha/anaconda3/bin:$PATH"
     fi
@@ -147,3 +147,19 @@ export DOCKER_HOST=localhost:2375
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/jeongmin_cha/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/jeongmin_cha/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/jeongmin_cha/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/jeongmin_cha/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
